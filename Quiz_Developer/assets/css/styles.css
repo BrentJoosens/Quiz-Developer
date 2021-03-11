@@ -267,9 +267,9 @@ main {
   display: flex;
   justify-content: space-between;
   margin: auto;
-  width: 21rem;
-  height: 4.5rem;
+  width: 18rem;
   margin-top: 1.5rem;
+  padding: 0.5rem 0.2rem;
 }
 
 .p1_level {
@@ -400,6 +400,9 @@ main {
     font-size: 15pt;
   }
   /*Level pagina*/
+  .p_level_first_header {
+    font-size: 24pt;
+  }
   .level_div {
     width: 24rem;
   }
@@ -459,6 +462,22 @@ main {
   }
   .sub_header .question_number {
     font-size: 18pt;
+  }
+  /*Level pagina*/
+  .p_level_first_header {
+    font-size: 27pt;
+  }
+  .level_div {
+    width: 27rem;
+  }
+  .button_level {
+    font-size: 22pt;
+  }
+  .p1_level {
+    font-size: 29pt;
+  }
+  .p2_level {
+    font-size: 17pt;
   }
 }
 
@@ -523,6 +542,22 @@ main {
   .sub_header .question_number {
     font-size: 21pt;
   }
+  /*Level pagina*/
+  .p_level_first_header {
+    font-size: 30pt;
+  }
+  .level_div {
+    width: 30rem;
+  }
+  .button_level {
+    font-size: 24pt;
+  }
+  .p1_level {
+    font-size: 32pt;
+  }
+  .p2_level {
+    font-size: 20pt;
+  }
 }
 
 @media screen and (min-width: 690px) {
@@ -574,4 +609,3 @@ main {
 @media screen and (min-width: 1800px) {
 
 }
-
