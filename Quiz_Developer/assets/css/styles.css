@@ -286,10 +286,11 @@ main {
   margin-bottom: 0.5rem;
   margin-top: 0;
   margin-left: 1rem;
-  font-size: 11pt;
+  font-size: 13pt;
 }
 
 .button_level {
+  color: white;
   background-color: #fbb400;
   border-color: #fbb400;
   font-weight: bold;
@@ -298,7 +299,6 @@ main {
   margin: auto 0.7rem;
   padding: 0.5rem 0.8rem;
 }
-
 
 .single_header {
   display: flex;
@@ -318,9 +318,8 @@ main {
 .first_header {
   display: flex;
   background-color: #c4c4c4;
-  padding: 0 0.5rem;
+  padding: 0.3rem 0.5rem;
   justify-content: center;
-  height: 2.9rem;
   margin-bottom: 3.5rem;
 }
 
@@ -413,7 +412,7 @@ main {
     font-size: 26pt;
   }
   .p2_level {
-    font-size: 14pt;
+    font-size: 15pt;
   }
 }
 
@@ -567,6 +566,22 @@ main {
   .sub_header {
     padding: 0.5rem 1.5rem;
   }
+  /*Level pagina*/
+  .p_level_first_header {
+    font-size: 36pt;
+  }
+  .level_div {
+    width: 34rem;
+  }
+  .button_level {
+    font-size: 27pt;
+  }
+  .p1_level {
+    font-size: 34pt;
+  }
+  .p2_level {
+    font-size: 23pt;
+  }
 }
 
 @media screen and (min-width: 768px) {
@@ -595,6 +610,9 @@ main {
   }
   aside {
     display: block;
+  }
+  .level_kiezen main {
+    margin-top: 2rem;
   }
 }
 
