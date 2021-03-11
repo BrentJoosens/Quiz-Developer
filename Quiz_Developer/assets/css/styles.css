@@ -374,6 +374,7 @@ main {
   .home .info_icon {
     width: 50px;
   }
+  /*Algemene headers voor alle paginas*/
   .header .header_logo {
     width: 260px;
   }
@@ -414,6 +415,7 @@ main {
 }
 
 @media screen and (min-width: 500px) {
+  /*Alles van home pagina*/
   .home h1 {
     font-size: 60pt;
   }
@@ -432,6 +434,7 @@ main {
   .home .info_icon {
     width: 55px;
   }
+    /*Algemene headers voor alle paginas*/
   .header .header_logo {
     width: 300px;
   }
@@ -460,6 +463,7 @@ main {
 }
 
 @media screen and (min-width: 576px) {
+    /*Alles van home pagina*/
   .home h1 {
     font-size: 73pt;
   }
@@ -493,6 +497,7 @@ main {
   .home .quit_button {
     font-size: 22pt;
   }
+    /*Algemene headers voor alle paginas*/
   .header .header_logo {
     width: 350px;
   }
