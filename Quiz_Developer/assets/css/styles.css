@@ -252,7 +252,7 @@ main {
 }
 
 /*Alles van Level paginga waarin gebruiker kan een level kiezen*/
-.p_level_first_header {
+.p_first_header {
   font-size: 21pt;
   margin: auto 0;
   color: #0a0a0a;
@@ -324,8 +324,8 @@ main {
 }
 
 /*Informatie pagina over cions*/
-.p_coin_first_header{
-  font-size: 26pt;
+.p_first_header{
+  font-size: 21pt;
   margin: auto 0;
   color: #0a0a0a;
   font-weight: bold;
@@ -399,7 +399,7 @@ main {
     font-size: 15pt;
   }
   /*Level pagina*/
-  .p_level_first_header {
+  .p_first_header {
     font-size: 24pt;
   }
   .level_div {
@@ -463,7 +463,7 @@ main {
     font-size: 18pt;
   }
   /*Level pagina*/
-  .p_level_first_header {
+  .p_first_header {
     font-size: 27pt;
   }
   .level_div {
@@ -542,7 +542,7 @@ main {
     font-size: 21pt;
   }
   /*Level pagina*/
-  .p_level_first_header {
+  .p_first_header {
     font-size: 30pt;
   }
   .level_div {
@@ -567,7 +567,7 @@ main {
     padding: 0.5rem 1.5rem;
   }
   /*Level pagina*/
-  .p_level_first_header {
+  .p_first_header {
     font-size: 36pt;
   }
   .level_div {
