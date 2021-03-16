@@ -352,6 +352,38 @@ main {
 .coin_info_page {
   background-color: #c4c4c4;
 }
+.questions{
+  display: flex;
+  margin-top: 2rem;
+  flex-direction: column;
+
+}
+
+.hint{
+  background-color: #7DDA55;
+  border-radius: 2rem ;
+  margin: 0rem 1rem 1rem auto;
+  padding: 0.3rem 0.8rem;
+  display: inline-block;
+  font-size: 20pt;
+  color: white;
+  font-weight: bold;
+}
+
+.form_button{
+  text-align: center;
+}
+
+.form_button button{
+  background-color: #7DDA55;
+  border-radius: 2rem;
+  text-align: center;
+  border: white;
+  padding: 0.5rem 1rem;
+  font-size: 20pt;
+  color: white;
+  font-weight: bold;
+}
 
 @media screen and (min-width: 425px) {
   /*Alles van home pagina*/
