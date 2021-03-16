@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="nl">
+<html lang="nl-BE">
   <head>
     <meta charset="utf-8" />
     <meta
@@ -9,6 +9,8 @@
     <title>Qiuz_Developer</title>
     <link rel="stylesheet" href="assets/css/reset.css" />
     <link rel="stylesheet" href="assets/css/styles.css" />
+
+    <script src="/assets/js/drag_and_drop.js" defer></script>
   </head>
 
   <body>
@@ -31,15 +33,42 @@
         <p class="name_of_the_game">LORD OF THE RINGS</p>
       </div>
     </header>
+
     <main>
       <div class="questions">
         <div class="hint">HINT</div>
         <form action="POST">
+          <h1>Wie heeft volgende gezegd?</h1>
           <fieldset>
-            
+            <div class="draggable-elements">
+              <div class="draggable" draggable="true" id="optie_een">Lady of the Wood</div>
+              <div class="draggable" draggable="true" id="optie_twee">Gandalf</div>
+              <div class="draggable" draggable="true" id="optie_drie">Sam</div>
+            </div>
+            <div class="options_drag_drop">
+              <div class="questions_with_drop">
+              <p>
+                <span>1</span>There is only one Lord of the Ring, only one who can bend it to his
+                will. And he does not share power.
+              </p>
+              <div class="droppable" data-draggable-id=""><span>Sleep hier juiste antwoord</span></div>
+            </div>
+            <div class="questions_with_drop">
+              <p>
+                <span>2</span>That there’s some good in this world, Mr. Frodo… and it’s worth
+                fighting for.
+              </p>
+              <div class="droppable" data-draggable-id=""><span>Sleep hier juiste antwoord</span></div>
+            </div>
+            <div class="questions_with_drop">
+              <p><span>3</span>The time of the Elves… is over. Do we leave Middle-Earth to its fate? Do we let them stand alone?</p>
+              <div class="droppable" data-draggable-id=""><span>Sleep hier juiste antwoord</span></div>
+            </div>
+      
+            </div>
           </fieldset>
           <fieldset class="form_button">
-                <button type="verzendknop" name="action" id="send" value="user-insert">VERZENDEN</button>
+                <button type="verzendknop" name="action" id="send" value="user-insert">CONTROL</button>
         </fieldset>
         </form>
       </div>
@@ -47,13 +76,13 @@
     <aside>
       <div class="aside_game_options">
         <p class="aside_menu_name">MENU</p>
-        <div class="aside_available_option">
+       <a href="/level-kiezen.html"> <div class="aside_available_option">
           <img
             class="aside_lord_of_the_rings_button_img"
             src="assets/img/lord_of_the_rings.jpg"
           />
           <p class="aside_available_option_name">LORD OF THE RINGS</p>
-        </div>
+        </div></a>
         <div class="aside_non_available_option">
           <img class="aside_fifa_button_img" src="assets/img/fifa.jpg" />
           <p class="aside_non_available_option_name">FIFA</p>

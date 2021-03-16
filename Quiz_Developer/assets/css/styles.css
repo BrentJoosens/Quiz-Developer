@@ -370,25 +370,22 @@ main {
   margin: 0.1rem 0 0.2rem 0.3rem ;
 }
 
-.questions{
-  display: flex;
-  margin-top: 2rem;
-  flex-direction: column;
-}
+/*Algemeene hint en controler form button*/
 
 .hint{
   background-color: #7DDA55;
   border-radius: 2rem ;
   margin: 0rem 1rem 1rem auto;
-  padding: 0.3rem 0.8rem;
+  padding: 0.3rem 1rem;
   display: inline-block;
-  font-size: 20pt;
+  font-size: 17pt;
   color: white;
   font-weight: bold;
 }
 
 .form_button{
   text-align: center;
+  margin-top: 1rem;
 }
 
 .form_button button{
@@ -396,10 +393,91 @@ main {
   border-radius: 2rem;
   text-align: center;
   border: white;
-  padding: 0.5rem 1rem;
-  font-size: 20pt;
+  padding: 0.3rem 1rem;
+  font-size: 17pt;
   color: white;
   font-weight: bold;
+}
+
+/*Drag and drop pagina*/
+
+.questions{
+  max-width:800px ;
+  display: flex;
+  margin: 2rem 0.8rem 0 0.8rem;
+  flex-direction: column;
+}
+
+.questions h1{
+  font-size: 20pt;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.questions p{
+  font-size: 12pt;
+}
+.questions_with_drop p span{
+  float: left;
+  font-size: 30pt;
+  line-height: 1;
+  font-weight: bold;
+  margin: auto 8px auto 0;
+}
+
+.draggable-elements {
+  display: flex;
+  justify-content: space-evenly;
+  margin-bottom: 1.5rem;
+}
+.draggable {
+  display: block;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  padding: 0.3rem 0.5rem;
+  font-size: 15pt;
+  cursor: move;
+  transition: opacity 0.2s;
+}
+.draggable:hover {
+  opacity: 0.5;
+}
+.droppable {
+  margin: 1rem auto;
+  padding: 0.3rem 1rem;
+  display: block;
+  text-align: center;
+  background-color: rgb(241, 239, 239);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  transition: border-width 0.2s, transform 0.2s, background-color 0.4s;
+}
+.droppable span {
+  display: block;
+  font-size: 15pt;
+  pointer-events: none;
+}
+
+.options_drag_drop{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+/* Drag and Drop Related Styling */
+
+.droppable.droppable-hover {
+  border-width: 5px;
+  transform: scale(0.99);
+}
+.droppable.dropped {
+  border-style: solid;
+
+}
+.droppable.dropped span {
+  display: none;
+}
+
+.draggable.dragged:hover {
+  transform: scale(0.99);
 }
 
 @media screen and (min-width: 425px) {
@@ -463,6 +541,7 @@ main {
   .p2_level {
     font-size: 15pt;
   }
+
   .coin_info_page main .live_feed_coins {
     width: 220px;
   }
@@ -484,6 +563,25 @@ main {
   .info_heading {
     font-size: 28pt;
   }
+  /*Algemeene hint en controler form button*/
+  .hint, .form_button button{
+    font-size: 20pt;
+  }
+
+  /*drag and drop pagina*/
+  .questions h1{
+    font-size: 25pt;
+  }
+  .questions p{
+    font-size: 14pt;
+  }
+  .questions_with_drop p span{
+    font-size: 35pt;
+  }
+  .draggable, .droppable span{
+    font-size: 18pt;
+  }
+
 }
 
 @media screen and (min-width: 500px) {
@@ -568,6 +666,26 @@ main {
   }
   .info_heading {
     font-size: 32pt;
+  }
+  
+  /*Algemeene hint en controler form button*/
+  .hint, .form_button button{
+    font-size: 23pt;
+    padding: 0.5rem 1rem;
+  }
+
+  /*drag and drop pagina*/
+  .questions h1{
+    font-size: 28pt;
+  }
+  .questions p{
+    font-size: 17pt;
+  }
+  .questions_with_drop p span{
+    font-size: 40pt;
+  }
+  .draggable, .droppable span{
+    font-size: 20pt;
   }
 }
 
@@ -670,6 +788,30 @@ main {
   .info_heading {
     font-size: 36pt;
   }
+
+  
+  /*Algemeene hint en controler form button*/
+  .hint, .form_button button{
+    font-size: 25pt;
+  }
+
+  /*drag and drop pagina*/
+  .questions h1{
+    font-size: 30pt;
+  }
+  .questions p{
+    font-size: 20pt;
+  }
+  .questions_with_drop p span{
+    font-size: 48pt;
+  }
+  .draggable{
+    font-size: 25pt;
+    padding: 0.3rem 0.8rem;
+  }
+  .droppable span{
+    font-size: 25pt;
+  }
 }
 
 @media screen and (min-width: 690px) {
@@ -720,9 +862,35 @@ main {
 
 @media screen and (min-width: 768px) {
 
+  
+  /*Algemeene hint en controler form button*/
+  .hint, .form_button button{
+    font-size: 28pt;
+  }
+
+  /*drag and drop pagina*/
+  .questions h1{
+    font-size: 35pt;
+  }
+  .questions p{
+    font-size: 25pt;
+  }
+  .questions_with_drop p span{
+    font-size: 50pt;
+  }
+  .draggable{
+    font-size: 28pt;
+    padding: 0.5rem 2rem;
+  }
+  .droppable span{
+    font-size: 28pt;
+  }
 }
 
 @media screen and (min-width: 851px) {
+  .questions{
+    margin: 2rem auto 0 auto;
+  }
 
 }
 
