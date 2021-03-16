@@ -324,14 +324,6 @@ main {
 }
 
 /*Informatie pagina over cions*/
-.p_first_header{
-  font-size: 21pt;
-  margin: auto 0;
-  color: #0a0a0a;
-  font-weight: bold;
-  text-shadow: 2px 2px #d2d2d3;
-  padding: 0;
-}
 .coin_p {
   margin: auto 3rem;
   font-size: 14pt;
@@ -352,11 +344,16 @@ main {
 .coin_info_page {
   background-color: #c4c4c4;
 }
+
+.coin_info_page main .live_feed_coins {
+  display: flex;
+  justify-content: center;
+}
+
 .questions{
   display: flex;
   margin-top: 2rem;
   flex-direction: column;
-
 }
 
 .hint{
