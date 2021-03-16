@@ -641,7 +641,7 @@ main {
     display: block;
   }
   .level_kiezen main {
-    margin-top: 2rem;
+   padding-top: 2rem;
   }
 }
 
