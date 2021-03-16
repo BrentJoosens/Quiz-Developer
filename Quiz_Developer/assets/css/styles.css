@@ -318,9 +318,8 @@ main {
 .first_header {
   display: flex;
   background-color: #c4c4c4;
-  padding: 0.3rem 0.5rem;
+  padding: 0.3rem 0.05rem;
   justify-content: center;
-  margin-bottom: 3.5rem;
 }
 
 /*Informatie pagina over cions*/
@@ -347,7 +346,26 @@ main {
 
 .coin_info_page main .live_feed_coins {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
+  width: 180px;
+  margin: 1rem auto;
+}
+
+.live_feed_coins p {
+  font-size: 16pt;
+}
+
+.live_feed_coins div {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.live_feed_coins div img {
+  width: 20px;
+  height: auto;
+  margin: 0.1rem 0 0.2rem 0.3rem ;
 }
 
 .questions{
@@ -443,6 +461,15 @@ main {
   .p2_level {
     font-size: 15pt;
   }
+  .coin_info_page main .live_feed_coins {
+    width: 220px;
+  }
+  .live_feed_coins p {
+    font-size: 20pt;
+  }
+  .live_feed_coins div img {
+    width: 24px;
+  }
 }
 
 @media screen and (min-width: 500px) {
@@ -506,6 +533,15 @@ main {
   }
   .p2_level {
     font-size: 17pt;
+  }
+  .coin_info_page main .live_feed_coins {
+    width: 260px;
+  }
+  .live_feed_coins p {
+    font-size: 24pt;
+  }
+  .live_feed_coins div img {
+    width: 28px;
   }
 }
 
@@ -586,6 +622,15 @@ main {
   .p2_level {
     font-size: 20pt;
   }
+  .coin_info_page main .live_feed_coins {
+    width: 290px;
+  }
+  .live_feed_coins p {
+    font-size: 27pt;
+  }
+  .live_feed_coins div img {
+    width: 31px;
+  }
 }
 
 @media screen and (min-width: 690px) {
@@ -610,6 +655,15 @@ main {
   }
   .p2_level {
     font-size: 23pt;
+  }
+  .coin_info_page main .live_feed_coins {
+    width: 310px;
+  }
+  .live_feed_coins p {
+    font-size: 31pt;
+  }
+  .live_feed_coins div img {
+    width: 35px;
   }
 }
 
